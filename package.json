@@ -1,0 +1,44 @@
+{
+  "name": "portfoliodrive",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@testing-library/jest-dom": "^4.2.4",
+    "@testing-library/react": "^9.3.2",
+    "@testing-library/user-event": "^7.1.2",
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0",
+    "react-scripts": "3.3.0",
+    "styled-components": "^4.4.1",
+    "gh-pages": "^2.1.1"
+  },
+  "devDependencies": {
+    "eslint-plugin-react-hooks": "^2.1.1",
+    "prettier": "^1.19.1",
+    "react-app-rewired": "^2.1.3",
+    "react-app-rewire-styled-components": "^3.0.2"
+  },
+  "scripts": {
+    "start": "react-app-rewired start",
+    "build": "react-app-rewired build",
+    "staging": "./node_modules/.bin/env-cmd -f ./.env.staging npm run build",
+    "test": "react-app-rewired test",
+    "eject": "react-scripts eject",
+    "deploy": "gh-pages -d build"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}
